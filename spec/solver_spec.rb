@@ -9,7 +9,10 @@ describe Solver do
   end
 
   describe '#reverse' do
-    it 'returns the word reversed'
+    it 'returns the word reversed' do
+      solver = Solver.new
+      expect(solver.reverse('word')).to eql 'drow'
+    end
   end
 
   describe '#fizzbuzz' do
