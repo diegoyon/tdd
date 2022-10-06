@@ -2,7 +2,10 @@ require_relative '../solver.rb'
 
 describe Solver do
   describe '#factorial' do
-    it 'returns the factorial of n'
+    it 'returns the factorial of n' do
+      solver = Solver.new
+      expect(solver.factorial(5)).to eql 120
+    end
   end
 
   describe '#reverse' do
